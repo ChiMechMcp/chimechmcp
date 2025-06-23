@@ -1,0 +1,54 @@
+# Cursor索引忽略文件
+# 忽略这些文件和目录，提高Cursor IDE的索引性能
+
+# Node.js
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 构建输出
+dist/
+build/
+lib/
+out/
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# 缓存
+.cache/
+.tmp/
+.temp/
+*.tmp
+*.temp
+
+# 日志
+logs/
+*.log
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 环境变量
+.env
+.env.*
+
+# 编辑器
+.vscode/
+.idea/
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 项目特定
+stats.json
+performance.json
+health-check.json
+
+# Don't index SpecStory auto-save files, but allow explicit context inclusion via @ references
+.specstory/**

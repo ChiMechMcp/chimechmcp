@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "chimech": {
+      "command": "npx",
+      "args": ["@chimech/mcp-server"],
+      "env": {
+        "CHIMECH_API_KEY": "your-api-key-here",
+        "CHIMECH_SERVER_URL": "https://api.chimech.com",
+        "LOG_LEVEL": "info",
+        "CACHE_TTL": "300",
+        "REQUEST_TIMEOUT": "30000",
+        "RETRY_COUNT": "3"
+      }
+    }
+  }
+} 

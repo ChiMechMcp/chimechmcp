@@ -1,0 +1,42 @@
+MIT License
+
+Copyright (c) 2024 千机阁科技有限公司 (ChiMech Technology Co., Ltd.)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+千机阁企业数字员工平台 MCP 服务器
+ChiMech Enterprise Digital Employee Platform MCP Server
+
+本软件遵循MIT开源许可证，您可以自由地：
+- 使用、复制、修改、合并、发布、分发、再许可和/或出售本软件的副本
+- 允许获得本软件副本的人员这样做
+
+前提条件：
+- 在所有副本或重要部分中包含上述版权声明和许可声明
+
+免责声明：
+- 本软件按"原样"提供，不提供任何形式的保证
+- 作者不对任何索赔、损害或其他责任负责
+
+更多信息：
+- 官网：https://chimech.com
+- 文档：https://docs.chimech.com  
+- 支持：support@chimech.com 
