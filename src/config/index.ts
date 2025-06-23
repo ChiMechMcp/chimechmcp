@@ -220,5 +220,12 @@ clientType: "auto"
 `;
 }
 
-// 导出默认配置实例
-export const defaultConfig = loadConfig(); 
+// 按需加载配置（避免导入时自动执行）
+let _defaultConfig: ChiMechConfig | null = null;
+
+export function getDefaultConfig(): ChiMechConfig {
+  if (!_defaultConfig) {
+    _defaultConfig = loadConfig();
+  }
+  return _defaultConfig;
+} 

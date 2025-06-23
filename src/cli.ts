@@ -19,6 +19,16 @@ program
   .description('千机阁企业数字员工平台 MCP 服务器')
   .version(VERSION);
 
+// version 命令单独处理，不需要配置
+program
+  .command('version')
+  .description('显示版本信息')
+  .action(() => {
+    console.log(`千机阁MCP服务器 v${VERSION}`);
+    console.log('🏗️  企业级数字员工平台');
+    console.log('📚 https://github.com/ChiMechMcp/chimechmcp');
+  });
+
 // health 命令 - 健康检查
 program
   .command('health')
