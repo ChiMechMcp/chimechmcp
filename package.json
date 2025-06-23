@@ -1,5 +1,5 @@
 {
-  "name": "@chimech/mcp-server",
+  "name": "chimech-mcp-server",
   "version": "1.0.0",
   "description": "千机阁企业数字员工平台 MCP 服务器实现",
   "keywords": ["mcp", "ai", "digital-employee", "enterprise", "typescript"],

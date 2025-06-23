@@ -10,7 +10,7 @@ describe('千机阁MCP服务器', () => {
   test('项目配置验证', () => {
     const pkg = require('../package.json');
     
-    expect(pkg.name).toBe('@chimech/mcp-server');
+    expect(pkg.name).toBe('chimech-mcp-server');
     expect(pkg.description).toContain('千机阁');
     expect(pkg.main).toBe('dist/index.js');
     expect(pkg.bin['chimech-mcp']).toBe('dist/cli.js');
