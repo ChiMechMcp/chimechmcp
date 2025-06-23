@@ -83,6 +83,7 @@ export interface ToolResponse {
     employeeId?: string;
     cached?: boolean;
     suggestions?: string[];
+    error?: boolean;
   };
 }
 

@@ -4,7 +4,7 @@
  */
 
 import { z } from 'zod';
-import type { ChiMechTool, ToolContext, ToolResponse } from '@/types';
+import type { ChiMechTool, ToolContext, ToolResponse, ChiMechApiResponse } from '@/types';
 import { ChiMechApiRequestSchema, ValidationError } from '@/types';
 import { CacheKeyGenerator } from '@/utils/cache';
 
@@ -76,7 +76,7 @@ async function handleChiMechAsk(
       }
     });
 
-    let response;
+    let response: ChiMechApiResponse;
     let cached = false;
 
     // 缓存处理
@@ -89,7 +89,7 @@ async function handleChiMechAsk(
       );
 
       // 尝试从缓存获取
-      const cachedResponse = await context.cache.get(cacheKey);
+      const cachedResponse = await context.cache.get<ChiMechApiResponse>(cacheKey);
       if (cachedResponse) {
         response = cachedResponse;
         cached = true;
@@ -205,7 +205,7 @@ async function handleChiMechAsk(
  * 格式化响应内容
  */
 function formatResponse(
-  response: any,
+  response: ChiMechApiResponse,
   includeMetadata: boolean,
   cached: boolean,
   executionTime: number

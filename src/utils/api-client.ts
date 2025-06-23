@@ -119,7 +119,7 @@ export class EmployeeRouter {
       '项目经理': ['项目', '管理', '协调', '计划', '进度', '团队']
     };
 
-    const roleMatches = roleKeywords[employee.role] || [];
+    const roleMatches = roleKeywords[employee.role as keyof typeof roleKeywords] || [];
     for (const keyword of roleMatches) {
       if (questionLower.includes(keyword) || contextLower.includes(keyword)) {
         score += 1;
