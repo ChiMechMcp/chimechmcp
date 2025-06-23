@@ -36,8 +36,11 @@
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
     "format": "prettier --write src/**/*.ts",
+    "type-check": "tsc --noEmit",
     "clean": "rimraf dist",
     "prepublishOnly": "npm run clean && npm run build && npm test",
+    "publish:release": "./publish.sh",
+    "publish:dry-run": "./publish.sh --dry-run",
     "cli": "tsx src/cli.ts",
     "setup": "node scripts/setup.js",
     "health-check": "tsx src/health-check.ts"
